@@ -29,15 +29,16 @@ const morganMiddleware = morgan(function (tokens, req, res) {
 })
 
 //Dev Logging Middleware
-if(process.env.NODE_ENV === 'development'){
-  app.use(morganMiddleware('dev'))
-}
+// if(process.env.NODE_ENV === 'development'){
+//   app.use(morganMiddleware('dev'))
+// }
+app.use(morganMiddleware)
 
 const PORT = process.env.PORT || 5000
 
 const server = app.listen(PORT,
   console.table(`Server running in ${process.env.NODE_ENV} mode on Port ${process.env.PORT}`
-  .rainbow.bold))
+  .yellow.inverse))
 
 //Handle unhandled promise rejections
 process.on('unhandledRejection', (err, promise) => {
