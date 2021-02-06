@@ -1,0 +1,42 @@
+{
+  "name": "weedwire",
+  "version": "1.0.0",
+  "description": "Marijuana Strain API",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sedx876/WWv1.git"
+  },
+  "author": "Sharon L. Watkins",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sedx876/WWv1/issues"
+  },
+  "homepage": "https://github.com/sedx876/WWv1#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chalk": "^4.1.0",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "express-mongo-sanitize": "^2.0.2",
+    "express-rate-limit": "^5.2.3",
+    "helmet": "^4.4.1",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.15",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.17",
+    "nodemon": "^2.0.7",
+    "randomatic": "^3.1.1",
+    "slugify": "^1.4.6",
+    "xss-clean": "^0.1.1"
+  }
+}
