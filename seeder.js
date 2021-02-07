@@ -14,7 +14,7 @@ mongoose.connect(process.env.MONGO_URI, {
   useUnifiedTopology: true
 })
 const strains = JSON.parse(
-  fs.readFileSync(`$__dirname/_data/strains.json`, 'utf-8')
+  fs.readFileSync(`${__dirname}/_data/strains.json`, 'utf-8')
 )
 
 const importData = async () => {

@@ -3,6 +3,7 @@ const dotenv = require('dotenv')
 const morgan = require('morgan')
 const colors = require('colors')
 const chalk = require('chalk')
+const mongoSanitize = require('express-mongo-sanitize')
 
 const connectDB = require('./config/db')
 
@@ -10,6 +11,8 @@ dotenv.config({ path: './config/config.env' })
 
 connectDB()
 const app = express()
+app.use(express.json())
+app.use(mongoSanitize())
 
 //Middleware
 const morganMiddleware = morgan(function (tokens, req, res) {

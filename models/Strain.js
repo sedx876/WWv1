@@ -28,7 +28,7 @@ const StrainSchema = new mongoose.Schema({
   cbd: String,
   image: String,
   goodFor: {
-    type: String,
+    type: [String],
     required: true,
     enum: [
       'Depression',
@@ -53,7 +53,7 @@ const StrainSchema = new mongoose.Schema({
     ]
   },
   posEffects: {
-    type: String,
+    type: [String],
     required: true,
     enum: [
       'Relaxed',
@@ -73,7 +73,7 @@ const StrainSchema = new mongoose.Schema({
     ]
   },
   negEffects: {
-    type: String,
+    type: [String],
     required: true,
     enum: [
       'Dizzy',
@@ -92,7 +92,7 @@ const StrainSchema = new mongoose.Schema({
     ]
   },
   flavors: {
-    type: String,
+    type: [String],
     enum: [
       'Earthy',
       'Chemical',
