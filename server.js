@@ -28,10 +28,6 @@ const morganMiddleware = morgan(function (tokens, req, res) {
   ].join(' ')
 })
 
-//Dev Logging Middleware
-// if(process.env.NODE_ENV === 'development'){
-//   app.use(morganMiddleware('dev'))
-// }
 app.use(morganMiddleware)
 
 const PORT = process.env.PORT || 5000

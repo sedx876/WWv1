@@ -1,0 +1,28 @@
+[
+  {
+    "_id": "601ffcc2233ade6c4705d3be",
+    "name": "Afpak",
+    "race": ["hybrid"],
+    "description": "Afpak, named for its direct Afghani and Pakistani landrace heritage, is a beautiful indica-dominant hybrid with light green and deep bluish purple leaves. The taste and aroma are floral with a touch of lemon, making the inhale light and smooth. Its effects start in the stomach by activating the appetite. There is also a potent relaxation that starts in the head and face, and gradually sinks down into the body. Enjoy this strain if you’re suffering from stress, mild physical discomfort, or having difficulty eating.",
+    "thc": "18%",
+    "cbd": "",
+    "image": "/images/afpak.jpeg",
+    "goodFor": ["depression", "insomnia", "pain", "stress", "lack of appetite"],
+    "posEffects": ["relaxed", "hungry", "happy", "sleepy"],
+    "negEffects": ["dizzy"],
+    "flavors": ["earthy", "chemical", "pine"]
+  },
+  {
+    "_id": "",
+    "name": "",
+    "race": [],
+    "description": "",
+    "thc": "",
+    "cbd": "",
+    "image": "",
+    "goodFor": [],
+    "posEffects": [],
+    "negEffects": [],
+    "flavors": []
+  }
+]
