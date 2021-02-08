@@ -5,5 +5,5 @@ const asyncHandler = require('../middleware/async')
 //Get All Strains
 //GET/api/v1/strains
 exports.getStrains = asyncHandler(async (req, res, next) => {
-  res.status(200).json(res)
+  res.status(200).json({ success: true, data: strains })
 })
