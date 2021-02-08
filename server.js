@@ -1,4 +1,6 @@
 const express = require('express')
+const path = require('path')
+const cors = require('cors')
 const dotenv = require('dotenv')
 const morgan = require('morgan')
 const colors = require('colors')
@@ -13,6 +15,13 @@ connectDB()
 const app = express()
 app.use(express.json())
 app.use(mongoSanitize())
+app.use(cors())
+
+//Routes
+const strains = require('./routes/strains')
+
+//Mount Routers
+app.use('/api/v1/strains', strains)
 
 //Middleware
 const morganMiddleware = morgan(function (tokens, req, res) {
