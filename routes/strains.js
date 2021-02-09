@@ -1,5 +1,6 @@
 const express = require('express')
-const { getStrains, getStrain } = require('../controllers/strains')
+const { getStrains, 
+        getStrain } = require('../controllers/strains')
 
 const Strain = require('../models/Strain')
 const router = express.Router()

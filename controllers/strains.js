@@ -9,7 +9,7 @@ exports.getStrains = async (req, res, next) => {
     const strains = await Strain.find()
     res 
       .status(200)
-      .json({ success: true, count: strains.length, data: strains })
+      .json({ success: true, msg: 'Here Are The Strains!!', count: strains.length, data: strains })
   }catch (err){
     res.status(400).json({ success: false })
   }

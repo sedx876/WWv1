@@ -41,7 +41,7 @@ const StrainSchema = new mongoose.Schema({
       'Headache',
       'Fatigue',
       'Eye Pressure',
-      'Inflamation',
+      'Inflammation',
       'Spasticity',
       'Seizures',
       'Muscle Spasms',
@@ -74,7 +74,6 @@ const StrainSchema = new mongoose.Schema({
   },
   negEffects: {
     type: [String],
-    required: true,
     enum: [
       'Dizzy',
       'Dry Mouth',
